@@ -12,20 +12,20 @@
         <source path="src"/>
     </sources>
 
-    <tests framework="munit" path="test"/>
+    <tests path="test" framework="munit"/>
 
     <targets hxml="compile">
         <target name="swf">
             <param line="-swf-version 11"/>
         </target>
-	<target name="cpp" />
-	<target name="js" />
+	<target name="cpp"/>
+	<target name="js"/>
     </targets>
     
     <dependencies>
-        <haxelib name="nme" version="3.4.0" />
-        <haxelib name="polygonal-ds" version="1.36" />
-        <haxelib name="polygonal-ui" version="1.00" />
-        <haxelib name="msignal" version="1.0.0" />
+        <haxelib name="nme"/>
+        <haxelib name="polygonal-ds" version="1.36"/>
+        <haxelib name="polygonal-ui" version="1.00"/>
+        <haxelib name="msignal" version="1.0.0"/>
     </dependencies>
 </project>
