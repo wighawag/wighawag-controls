@@ -4,8 +4,7 @@
     <compiler-version>2.10</compiler-version>
 
     <id>com.wighawag.controls</id>
-    <version>0.1.0</version>
-	<prepared>2013-02-23 21:52:47</prepared>
+    <version>0.1.1-SNAPSHOT</version>
 
     <main>Main</main>
 
