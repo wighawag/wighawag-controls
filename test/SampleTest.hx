@@ -1,8 +1,8 @@
 package;
 
-import com.wighawag.controls.FakeAccelerometer;
-import com.wighawag.controls.StageButtonPanel;
-import com.wighawag.controls.NMEAccelerometer;
+import wighawag.controls.FakeAccelerometer;
+import wighawag.controls.StageButtonPanel;
+import wighawag.controls.OpenFLAccelerometer;
 import massive.munit.util.Timer;
 import massive.munit.Assert;
 import massive.munit.async.AsyncFactory;
@@ -13,13 +13,13 @@ import massive.munit.async.AsyncFactory;
 * This is an example test class can be used as a template for writing normal and async tests 
 * Refer to munit command line tool for more information (haxelib run munit)
 */
-class ExampleTest 
+class SampleTest 
 {
 	private var timer:Timer;
 	
 	public function new() 
 	{
-		new NMEAccelerometer();
+		new OpenFLAccelerometer();
 		new StageButtonPanel([{x:0,y:0,radius:4},{x:200,y:100,radius:66}]);
 		new FakeAccelerometer(null);
 	}

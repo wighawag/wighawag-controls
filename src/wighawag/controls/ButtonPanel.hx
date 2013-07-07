@@ -1,5 +1,13 @@
-package com.wighawag.controls;
-import com.wighawag.controls.StageButtonPanel;
+/****
+* Wighawag License:
+* - free to use for commercial and non commercial application
+* - provided the modification done to it are given back to the community
+* - use at your own risk
+* 
+****/
+
+package wighawag.controls;
+import wighawag.controls.StageButtonPanel;
 import msignal.Signal;
 
 class ButtonPanelNetworkData{

@@ -1,0 +1,13 @@
+{
+  "name": "wighawag-controls",
+  "url" : "https://github.wighawag/wighawag-controls/",
+  "license": "Wighawag",
+  "tags": ["cross"],
+  "description": "",
+  "version": "0.0.1",
+  "releasenote": "",
+  "contributors": ["wighawag"],
+  "dependencies": {"wighawag-report":"","msignal":"","polygonal-ds":""},
+  "classPath":"src",
+  "targets" : ["as3"]
+}

@@ -1,7 +1,14 @@
-package com.wighawag.controls;
+/****
+* Wighawag License:
+* - free to use for commercial and non commercial application
+* - provided the modification done to it are given back to the community
+* - use at your own risk
+* 
+****/
+
+package wighawag.controls;
 import haxe.Timer;
-import com.wighawag.controls.Accelerometer;
-import de.polygonal.ui.Key;
+import wighawag.controls.Accelerometer;
 import msignal.Signal;
 class FakeAccelerometer implements Accelerometer {
 
@@ -25,7 +32,7 @@ class FakeAccelerometer implements Accelerometer {
         var timestamp : Float = Timer.stamp() / 1000;
 
 	    if (keyboard == null){
-		    var stage = nme.Lib.current.stage;
+		    var stage = flash.Lib.current.stage;
 		    var computedX :Float = (stage.mouseX - stage.stageWidth /2) /(stage.stageWidth/2);
 		    var computedY :Float = - (stage.mouseY - stage.stageHeight /2) /(stage.stageHeight/2);
 		    onData.dispatch( {x : computedY, y : - computedX, z : 0, timestamp : Timer.stamp() / 1000});

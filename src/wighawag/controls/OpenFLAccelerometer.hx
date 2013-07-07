@@ -1,16 +1,24 @@
-package com.wighawag.controls;
-import com.wighawag.controls.Accelerometer;
-import nme.events.AccelerometerEvent;
-import msignal.Signal;
-class NMEAccelerometer implements Accelerometer{
+/****
+* Wighawag License:
+* - free to use for commercial and non commercial application
+* - provided the modification done to it are given back to the community
+* - use at your own risk
+* 
+****/
 
-    private var accelerometer : nme.sensors.Accelerometer;
+package wighawag.controls;
+import wighawag.controls.Accelerometer;
+import flash.events.AccelerometerEvent;
+import msignal.Signal;
+class OpenFLAccelerometer implements Accelerometer{
+
+    private var accelerometer : flash.sensors.Accelerometer;
 
     public var onData(default,null) : Signal1<AccelerometerData>;
 
     public function new() {
         onData = new Signal1();
-        this.accelerometer = new nme.sensors.Accelerometer();
+        this.accelerometer = new flash.sensors.Accelerometer();
         this.accelerometer.addEventListener(AccelerometerEvent.UPDATE, onUpdate);
     }
 

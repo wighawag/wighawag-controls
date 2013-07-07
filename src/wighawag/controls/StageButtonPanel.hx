@@ -1,13 +1,21 @@
-package com.wighawag.controls;
+/****
+* Wighawag License:
+* - free to use for commercial and non commercial application
+* - provided the modification done to it are given back to the community
+* - use at your own risk
+* 
+****/
 
-import nme.display.Stage;
-import nme.events.MouseEvent;
-import nme.events.TouchEvent;
-import nme.ui.Multitouch;
+package wighawag.controls;
+
+import flash.display.Stage;
+import flash.events.MouseEvent;
+import flash.events.TouchEvent;
+import flash.ui.Multitouch;
 import msignal.Signal;
 import de.polygonal.ds.IntHashSet;
 
-import com.wighawag.controls.ButtonPanel;
+import wighawag.controls.ButtonPanel;
 
 class StageButtonPanel implements ButtonPanel{
 
@@ -24,7 +32,7 @@ class StageButtonPanel implements ButtonPanel{
 	    onButtonReleased = new Signal1();
 	    currentlyPressedList = new Array();
 
-	    this.stage = nme.Lib.current.stage;
+	    this.stage = flash.Lib.current.stage;
 	    this.buttonPlacements = buttons;
 	    buttonsState = new IntHashSet(nextPowOf2(buttons.length));
 
