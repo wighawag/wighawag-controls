@@ -1,13 +1,13 @@
 {
   "name": "wighawag-controls",
   "url" : "https://github.wighawag/wighawag-controls/",
-  "license": "Wighawag",
+  "license": "GPL",
   "tags": ["cross"],
-  "description": "",
+  "description": "A lib for controllers (keyboard, button panel, accelerometer...)",
   "version": "0.0.1",
   "releasenote": "",
   "contributors": ["wighawag"],
-  "dependencies": {"wighawag-report":"","msignal":"","polygonal-ds":""},
+  "dependencies": {"wighawag-report":"0.0.1","msignal":"1.2.1","polygonal-ds":"1.4.0"},
   "classPath":"src",
   "targets" : ["as3"]
 }
